@@ -12,10 +12,13 @@ import java.util.UUID;
 
 @Table(
         name ="Like",
-        uniqueConstraints = @UniqueConstraint(
-                name = "single_like_per_account",
-                columnNames = {"author_id", "post_id", "comment_id"}
-        ))
+        uniqueConstraints = {@UniqueConstraint(
+                name = "single_like_on_post_per_account",
+                columnNames = {"author_id", "post_id"}
+        ), @UniqueConstraint(
+                name = "single_like_on_comment_per_account",
+                columnNames = {"author_id", "comment_id"}
+        )})
 @Entity
 @Getter
 @Setter
