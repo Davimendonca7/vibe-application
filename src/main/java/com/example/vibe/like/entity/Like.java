@@ -11,12 +11,12 @@ import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Table(
-        name ="Like",
+        name ="Likes",
         uniqueConstraints = {@UniqueConstraint(
-                name = "single_like_on_post_per_account",
+                name = "single_likes_on_post_per_account",
                 columnNames = {"author_id", "post_id"}
         ), @UniqueConstraint(
-                name = "single_like_on_comment_per_account",
+                name = "single_likes_on_comment_per_account",
                 columnNames = {"author_id", "comment_id"}
         )})
 @Entity

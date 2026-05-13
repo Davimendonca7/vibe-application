@@ -17,6 +17,7 @@ import java.util.UUID;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "Images")
 @Check(constraints = "(post_id IS NOT NULL AND comment_id IS NULL) or (comment_id IS NOT NULL AND post_id IS NULL)")
 public class Image {
 

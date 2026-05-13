@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${LOCAL_URL_DB}:5432/vibe_credenciais
+    username: admin
+    password: vibe_password
+
+
+
+
