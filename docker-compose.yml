@@ -49,6 +49,9 @@ services:
     ports:
       - "4566:4566"
       - "9080:8080"
+    volumes:
+      - "./localstack:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
     networks:
       - vibe-network
 

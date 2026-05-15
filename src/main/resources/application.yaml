@@ -8,4 +8,13 @@ spring:
 server:
   port: 8080
 
+jwt:
+  secret: 4Z^XrroxR@dWxqf$mTTKwW$!@#qGr4P
 
+aws:
+  access-key: test
+  secret-key: test
+  region: us-east-1
+  s3:
+    endpoint: http://localhost:4566
+    bucket: vibe-bucket
